@@ -1,0 +1,25 @@
+{
+  "global": {
+    "train_data_file_path": "data\\train.utf8",
+    "dev_data_file_path": "data\\test.utf8",
+    "word_embedding_file_path": "word_embedding\\glove.6B.50d.txt",
+    "word_embedding_dim": 50,
+    "stop_word_file_path": "",
+    "label_file_path": "data\\label.utf8",
+    "max_document_len": 200,
+    "log_path": "log\\情感分类.log",
+    "batch_size" : 64,
+    "epoch": 100,
+    "class_num": 2
+  },
+   "model": {
+     "type": "birnn",
+     "hidden_size": 128,
+     "dropout": 0.2,
+     "layer_num": 2,
+     "fc_nums": 64,
+     "learning_rate": 0.0001,
+     "path": "save_model",
+     "name": "情感分类"
+   }
+}
